@@ -54,10 +54,11 @@ class TicTacToe
   end 
   def turn 
     input = gets.strip 
-    index = input 
+    index = input_to_index(input)
     if valid_move?(index)
       character = "#{current_player}"
       move(index, character)
+      display_board
     else 
       turn 
     end 
