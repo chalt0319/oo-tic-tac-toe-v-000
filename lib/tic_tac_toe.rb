@@ -70,7 +70,9 @@ class TicTacToe
       win3 = wins[2]
       if win1 == "X" && win2 == "X" && win3 == "X"
         wins 
-      elsif win1 == "" && win2 == "X" && win3 == "X"
+      elsif win1 == "O" && win2 == "O" && win3 == "O"
         wins
-      
+      end 
+    end 
+  end 
 end 
