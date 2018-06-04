@@ -52,5 +52,15 @@ class TicTacToe
       return "O"
     end
   end 
-  
+  def turn 
+    input = gets.strip 
+    index = input 
+    if valid_move?(index)
+      character = "#{current_player}"
+      move(index, character)
+    else 
+      turn 
+    end 
+  end 
+      
 end 
