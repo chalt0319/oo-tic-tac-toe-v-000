@@ -27,6 +27,10 @@ class TicTacToe
     @board[index] = character
   end 
   def position_taken?
-    
+    if @board[index] = "X" || @board[index] = "O" 
+      return true 
+    else 
+      return false 
+    end 
   end 
 end 
