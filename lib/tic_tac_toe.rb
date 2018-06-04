@@ -86,5 +86,11 @@ class TicTacToe
   def over?
     won? || draw?
   end 
+  def winner
+    winnerwinner = won?
+    if over?
+      return winnerwinner.first
+    end 
+  end 
 end 
 
