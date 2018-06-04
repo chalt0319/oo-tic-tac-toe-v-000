@@ -23,5 +23,6 @@ class TicTacToe
     index = input.to_i - 1 
     index 
   end 
-  def move()
+  def move(board, index, character)
+    board[index] = character
 end 
