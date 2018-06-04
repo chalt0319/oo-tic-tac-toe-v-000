@@ -92,5 +92,7 @@ class TicTacToe
       return @board[winnerwinner.first]
     end 
   end 
+  def play 
+    
 end 
 
