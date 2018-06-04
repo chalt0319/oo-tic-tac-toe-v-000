@@ -64,6 +64,13 @@ class TicTacToe
     end 
   end 
   def won?
-    
+    WIN_COMBINATIONS.detect do |wins|
+      win1 = wins[0]
+      win2 = wins[1]
+      win3 = wins[2]
+      if win1 == "X" && win2 == "X" && win3 == "X"
+        wins 
+      elsif win1 == "" && win2 == "X" && win3 == "X"
+        wins
       
 end 
