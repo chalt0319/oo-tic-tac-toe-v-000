@@ -68,9 +68,9 @@ class TicTacToe
       win1 = wins[0]
       win2 = wins[1]
       win3 = wins[2]
-      if win1 == "X" && win2 == "X" && win3 == "X"
+      if @board[win1] == "X" && @board[win2] == "X" && @board[win3] == "X"
         wins 
-      elsif win1 == "O" && win2 == "O" && win3 == "O"
+      elsif @board[win1] == "O" && @board[win2] == "O" && @board[win3] == "O"
         wins
       end 
     end 
