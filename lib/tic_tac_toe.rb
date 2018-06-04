@@ -78,6 +78,9 @@ class TicTacToe
   def full?
     @board.all? do |spot|
       if spot == "X" || spot == "O"
+        return true
+      elsif spot == " " || spot == ""
+        return false
       end 
     end 
   end 
